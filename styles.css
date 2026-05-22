@@ -1,0 +1,230 @@
+body {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    max-width: 1600px;
+}
+
+header {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    color: #888888;
+}
+
+.menu-button {
+    font-size: 24px;
+    color: #888888;
+    cursor: pointer;
+}
+
+.hero-section {
+    background-color: #f4d03f;
+}
+
+.hero-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hero-image-wrapper {
+    width: 45%;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    height: auto;
+}
+
+.hero-content {
+    width: 45%;
+    padding-bottom: 80px;
+}
+
+.hero-label {
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-source {
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.hero-source span {
+    font-weight: bold;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #333333;
+    background-color: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.profile-section {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.profile-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-title {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.profile-subtitle {
+    color: #666666;
+    font-size: 16px;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-card {
+    width: 30%;
+}
+
+.profile-photo-wrapper {
+    width: 30%;
+    text-align: center;
+}
+
+.details-card {
+    width: 30%;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 28px;
+    color: #555555;
+}
+
+.image-credit {
+    font-size: 12px;
+    color: #999999;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f4d03f;
+    border: 5px solid #ffffff;
+    margin: 0 auto;
+    display: block;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.detail-item strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.detail-item span {
+    display: block;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-link img {
+    width: 18px;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.social-link img:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+    .hero-container, .profile-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-image-wrapper, .hero-content, .about-card,
+    .profile-photo-wrapper, .details-card {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 0;
+    }
+
+    .hero-label {
+        font-size: 40px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .detail-item {
+        text-align: center;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
